@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Academy</title>
+</head>
+
+<body>
+    <iframe referrerpolicy="no-referrer" sandbox="allow-scripts allow-forms" width="500" height="500" src="https://preview.colorlib.com/theme/bootstrap/login-form-18/" frameborder="0"></iframe>
+    <button id="btn">Get Started</button>
+
+
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.self.location;
+        }
+        document.getElementById('btn').addEventListener('click', () => {
+            window.alert('hacked!');
+        })
+    </script>
+</body>
+
+</html>
