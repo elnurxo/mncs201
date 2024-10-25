@@ -1,1 +1,21 @@
 new code here
+
+
+git add 
+git init
+git commit
+git pull
+git push
+git remote add origin
+git clone
+----
+git merge
+git branch
+git branch branch_name
+git switch branch_name
+git checkout -b branch_name
+git reset
+git log
+git log --oneline
+git branch -r (-l, -a)
+git diff
