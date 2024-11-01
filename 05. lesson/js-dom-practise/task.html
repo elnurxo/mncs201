@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>small text</h1>
+
+    <script>
+        document.querySelector("h1").addEventListener("click",function(){
+            this.style.fontSize = "50px";
+            this.textContent = "LARGE TEXT";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="first" placeholder="first number">
+    <input type="number" id="second" placeholder="second number">
+    <select>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button>calculate sum</button>
+    <hr>
+    <h2><b>output: </b> <span id="output"></span></h2>
+
+    <script>
+        const inp1 = document.querySelector("#first");
+        const inp2 = document.querySelector("#second");
+        const output = document.querySelector("#output");
+
+        document.querySelector("button").addEventListener("click", function () {
+            const sum = Number(inp1.value) + Number(inp2.value);
+            output.textContent = sum;
+        });
+    </script>
+</body>
+
+</html>

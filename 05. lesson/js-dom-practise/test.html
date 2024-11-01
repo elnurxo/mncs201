@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSS Test</title>
+</head>
+<body>
+  <p id="message"></p>
+
+  <script>
+    // Parse the URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const userInput = params.get("input");
+
+    // Inject the user-provided input directly into the DOM without sanitization
+    const messageElement = document.getElementById("message");
+    if (messageElement) {
+      messageElement.innerHTML = userInput; // Dangerous: This is where XSS can happen
+    }
+  </script>
+</body>
+</html>
